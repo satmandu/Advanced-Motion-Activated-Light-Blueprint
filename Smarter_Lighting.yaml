@@ -47,9 +47,11 @@ blueprint:
           default: []
           selector:
             entity:
-              domain: switch
               multiple: true
-
+              filter:
+                - domain:
+                    - light
+                    - switch
         # --- Auto-off times for Switches ---
 
         auto_off_switch_day:
